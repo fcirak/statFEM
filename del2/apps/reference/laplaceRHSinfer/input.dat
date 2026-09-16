@@ -1,0 +1,4 @@
+meshFile          bar.smf
+allParamFile      allParam.dat
+infInputFile      inferenceInput.dat
+  

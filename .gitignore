@@ -1,0 +1,67 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Paraview files
+*.vtu
+*.avi
+*.pvd
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# # Eclipse files
+# .project
+# .settings
+# .cproject
+
+# VSCode files (settings.json has machine-specific absolute paths;
+# launch.json/tasks.json are portable - see git history if that changes)
+.vscode/settings.json
+
+# Latex temporaries 
+*.aux
+*.bbl
+*.blg
+*.brf
+*.log
+*.lof
+*.out
+*.spl
+*.synctex.gz
+*.toc
+
+# OS X auxilliary directories
+.DS_Store
+
+.temp/

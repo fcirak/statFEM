@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run current Makefile Tools launch target",
+            "type": "shell",
+            "command": "${command:makefile.getLaunchTargetPath}",
+            "options": {
+                "cwd": "${command:makefile.getLaunchTargetDirectory}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

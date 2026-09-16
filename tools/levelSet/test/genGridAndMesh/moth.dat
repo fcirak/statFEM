@@ -1,0 +1,11 @@
+smf	  moth.smf
+dim	  3
+minX	  -1.6
+minY	  -0.1
+minZ	  -0.5
+maxX	  2.4
+maxY	  9.9
+maxZ	  0.5
+numCellsX 40
+numCellsY 40
+numCellsZ 40

@@ -1,0 +1,12 @@
+statX/apps/reference/gaussianProcess/watchDog.0.mk
+statX/apps/reference/mcmcGaussian/watchDog.0.mk
+del2/apps/reference/laplace/watchDog.0.mk
+del2/apps/reference/laplaceRHSinfer/watchDog.0.mk
+del2/apps/reference/laplaceInverse/watchDog.0.mk
+gshell/apps/reference/squarePlate/watchDogTests/watchDog.SF.CC.mk
+gshell/apps/reference/squarePlate/watchDogTests/watchDog.SF.LoopA.mk
+gshell/apps/reference/squarePlate/watchDogTests/watchDog.SF.LoopB.mk
+gshell/apps/reference/squarePlate/watchDogTests/watchDog.SF.LoopD.mk
+gshell/apps/reference/squarePlate/watchDogTests/watchDog.KL.CC.mk
+gshell/apps/reference/squarePlate/watchDogTests/watchDog.KL.LoopA.mk
+gshell/apps/reference/flatWing/watchDog.0.mk

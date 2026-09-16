@@ -1,0 +1,5 @@
+SVenant {
+	youngModulus 1000.00
+	poissonRatio 0.
+	massDensity  8.5
+}

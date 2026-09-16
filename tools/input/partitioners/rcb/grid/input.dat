@@ -1,0 +1,13 @@
+dim	  2
+bbminX	  0.0
+bbminY	  0.0
+bbminZ	  0.0
+bbmaxX	  1.0
+bbmaxY	  1.0
+bbmaxZ	  1.0
+numCellsX 20
+numCellsY 20
+numCellsZ 20
+numParts  3
+overlapLayers  2
+writeVTU  1

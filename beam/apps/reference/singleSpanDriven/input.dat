@@ -1,0 +1,22 @@
+meshFile          line100.smf
+supportsFile      line100.supp
+
+materialFile      material.dat
+
+beamThickness     0.09285  
+
+isDynamic         1
+useEuler          1
+stepSize          0.0025
+numSteps          10
+
+newmarkBeta       0.25                     # (0,0.5]
+newmarkGamma      0.5                      # (0,1.0]
+
+every             1
+
+tolerance         1.e-8
+maxiter           30
+
+rayleighM         0.00
+rayleighK         0.00

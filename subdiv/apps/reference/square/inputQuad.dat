@@ -1,0 +1,7 @@
+# input
+inputMeshFileName        input/meshQuad.smf
+secondaryInputFileName   input/meshQuad.tg
+
+# output
+outputFolder             out/
+outputMeshFileName       out/meshQuad.smf

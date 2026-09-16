@@ -1,0 +1,11 @@
+smf	  box2D.smf
+dim	  2
+minX	  -1.0
+minY	  -1.0
+minZ	  -1.0
+maxX	  1.0
+maxY	  1.0
+maxZ	  1.0
+numCellsX 20
+numCellsY 20
+numCellsZ 20

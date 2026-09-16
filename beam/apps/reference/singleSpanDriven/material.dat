@@ -1,0 +1,8 @@
+SVenant {
+	##youngModulus 2.0e11         # N/m^2
+	##poissonRatio 0.0            # 1
+	##massDensity  7.85e3         # Kg/m^3
+  youngModulus 250            # N/m^2
+  poissonRatio 0.0            # 1   
+  massDensity  500            # Kg/m^3
+}

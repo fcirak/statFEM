@@ -1,0 +1,11 @@
+smf	  duck.smf
+dim	  3
+minX	  -2.25
+minY	  -0.25
+minZ	  -3.25
+maxX	   2.25
+maxY	   4.5
+maxZ	   2.0
+numCellsX  40 
+numCellsY  40
+numCellsZ  40

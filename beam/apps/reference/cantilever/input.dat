@@ -1,0 +1,8 @@
+meshFile          line8.smf
+materialFile      material.dat
+constraintsFile   line8.cstr
+supportsFile      line8.supp
+loadsFile         line8.load
+
+beamArea          0.02
+beamSecMomArea    6.66666666666667e-05

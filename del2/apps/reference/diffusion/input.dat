@@ -1,0 +1,5 @@
+meshFile          circle.smf
+stepSize          .0001
+numSteps          1000
+kappa             1.0
+rho               1.0

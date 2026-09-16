@@ -1,0 +1,5 @@
+meshFile               planeSheetQQ.smf
+materialFile           material.dat
+nodalForcesFile        nodalForce.dat
+numberOfSubSteps       3
+numberOfSubIterations  100

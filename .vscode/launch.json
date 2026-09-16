@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug current Makefile Tools launch target",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${command:makefile.getLaunchTargetPath}",
+            "cwd": "${command:makefile.getLaunchTargetDirectory}",
+            "args": [],
+            "stopAtEntry": false,
+            "externalConsole": false
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+# predefined distribution
+mean             1.0
+stdDev           0.5
+
+# MCMC settings
+initialProp      0.5
+stdDevProp       2.5
+seed             0
+numSamples       50000
+
+# burn-in ratio
+burnInRatio      0.0
+
+# output files
+acceptRatioFile  acceptRatio.dat
+sampleFile       sample.dat
+likelihoodFile   likelihood.dat

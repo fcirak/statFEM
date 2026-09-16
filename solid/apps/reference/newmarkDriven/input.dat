@@ -1,0 +1,6 @@
+meshFile          input/fourtriangles.smf
+materialFile      input/material.dat
+constraintsFile   input/constraints
+newmarkBeta       0.25
+newmarkGamma      0.5
+numberOfSteps     5

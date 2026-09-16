@@ -1,0 +1,11 @@
+smf	  horse.smf
+dim	  3
+minX	  -0.06
+minY	  -0.12
+minZ	  -0.09
+maxX	  0.06
+maxY	  0.12
+maxZ	  0.09
+numCellsX 40
+numCellsY 40
+numCellsZ 40

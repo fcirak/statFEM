@@ -1,0 +1,83 @@
+//------------------------------------------------------------------------------
+// 
+// This is an implementation plan for corlib modifications and features
+//
+//------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------
+// Time frame: Two weeks
+//------------------------------------------------------------------------------
+
+
+//------------------------------------------------------------------------------
+// Time frame: One month 
+//------------------------------------------------------------------------------
+
+- Create doxygen modules using  \addtogroup . Possible module names are IO, Solvers,
+  FEContainers, TimeIntegrators, ... (July 5)
+
+- The purpose of BodyForce.hpp is not so clear anymore. It should be possible 
+  to do everything without using it. (Apr 25)
+  
+- Remove AccumulateQuantity since this can be done also with CollectQuantity (Apr 16)
+
+- Rename current Distributor to SolutionDistributor. Consider doing the same task 
+  by first collecting all dofs, obtaining the solution from the solver and distributing 
+  it. This could all be done with generic collectors and distributors which could be also 
+  useful for other tasks. (Apr 16)  
+
+- In Shape.hpp change enum to Shape (March 8)
+
+- Change linalg.hpp to mathFTL.h (March 8)
+
+- Remove SetData. The functionality can be accomplished by first filling a 
+  container and then using DistributeQuantity  (May 14)
+
+//------------------------------------------------------------------------------
+// Time frame: Three months 
+//------------------------------------------------------------------------------
+
+- In order to use the 'globalSecondDerivatives' function, 'evaluateHessian'
+  needs to be implemented for the used shape functions. (Apr 23)
+
+- Shapefun:
+  Rename Shapefun to ShapeFun. (March 4)
+ 
+- Create subdirectories in order to reduce the number of files. (March 4)
+
+- Split implementation of the ShapeFun into three files (March 9)
+
+  template<unsigned DIM, unsigned ORDER> SimplexShapeFun;
+  template<unsigned DIM, unsigned ORDER> TensorLagrangeShapeFun;
+  template<unsigned DIM, unsigned ORDER> SerendipityShapeFun;
+
+
+
+
+
+//------------------------------------------------------------------------------
+// Suggestions to consider:
+//------------------------------------------------------------------------------
+
+
+- cleanup / re-ordering of the files
+  misc.hpp, linalg.hpp and Eigen3.hpp (steal from Eigen3 in the latter case??)
+
+- Quadrature: Use 'order' as template parameter:
+
+  template<corlib::shape SHAPE, unsigned ORDER> Quadrature;
+
+  It makes more sense than using the number of quadrature points as template 
+  parameter.
+
+
+
+**
+Comment: it appears more natural to have the orders as template parameters
+         instead of node/point numbers. Reasons:
+         - As a user I would not care too much how many nodes a cubic
+           tetrahedron really has.
+         - The number of nodes of the simplex quadrature rules is rather
+           mysterious and needs to be looked up in the implementation.
+         - Look at ShapefunTraits in order to get a taste how complicated
+           type derivations based on the number of nodes are!

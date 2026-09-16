@@ -1,0 +1,11 @@
+meshFile          fourtriangles.smf
+materialFile      material.dat
+constraintsFile   constraints
+newmarkBeta       0.25
+newmarkGamma      0.5
+numberOfSteps     5
+
+rayleigh1         0.0
+rayleigh2         0.0
+
+doEulerBackward   0

@@ -1,0 +1,11 @@
+# file of GP hyper-parameters
+gpHpsFile                gpHps.dat
+
+# file of GP training data positions
+trainingCoordFile        gpCoordinates.dat
+
+# files of GP outputs
+likelihoodFile           likelihood.dat
+predictionCoordFile      predictionCoord.dat
+predictionMeanFile       predictionMean.dat
+predictionVarFile        predictionVar.dat

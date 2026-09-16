@@ -1,0 +1,55 @@
+# input file to be read into parameter map
+
+# forcing uncertainty
+forcing.sigma                   0.0
+forcing.length                  0.3
+
+# model mismatch
+rho                             1.
+mismatch.sigma                  0.0
+mismatch.length                 0.3
+
+# sensor uncertainty
+mismatch.sensorEps              0.01
+
+# material coefficients uncertainty
+gaussianProcess.sigma           1.
+gaussianProcess.length          0.32
+gaussianProcess.eps             0.00005
+gaussianProcess.w0              0.7
+gaussianProcess.w1              1.0
+gaussianProcess.w2              0.7
+gaussianProcess.w3              0.4
+gaussianProcess.w4              0.7
+
+# initial sample for MCMC
+init.gaussianProcess.w0         0.8
+init.gaussianProcess.w1         1.1
+init.gaussianProcess.w2         0.8
+init.gaussianProcess.w3         0.4
+init.gaussianProcess.w4         0.8
+init.mismatch.sensorEps         0.0075
+
+# standard deviation for the proposal covariance
+propStDev.gaussianProcess.w0    0.02
+propStDev.gaussianProcess.w1    0.02
+propStDev.gaussianProcess.w2    0.02
+propStDev.gaussianProcess.w3    0.02
+propStDev.gaussianProcess.w4    0.02
+propStDev.mismatch.sensorEps    0.01
+
+# mean of the prior distribution of hyperparameters
+priorMean.gaussianProcess.w0    0.8
+priorMean.gaussianProcess.w1    1.1
+priorMean.gaussianProcess.w2    0.8
+priorMean.gaussianProcess.w3    0.4
+priorMean.gaussianProcess.w4    0.8
+priorMean.mismatch.sensorEps    0.0075
+
+# variance of the prior distribution of hyperparameters
+priorCov.gaussianProcess.w0     0.05
+priorCov.gaussianProcess.w1     0.05
+priorCov.gaussianProcess.w2     0.05
+priorCov.gaussianProcess.w3     0.05
+priorCov.gaussianProcess.w4     0.05
+priorCov.mismatch.sensorEps     0.002

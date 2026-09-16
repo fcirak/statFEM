@@ -1,0 +1,79 @@
+# `-*-mode: Makefile -*-'
+
+#################################################
+#  MAKEFILE variables for statFEM on a Linux 
+#  machine (Debian/Ubuntu) with system default
+#  installations and gcc
+
+# compiler and linker
+CPLUSPLUS    = g++
+MPICPLUSPLUS = mpicxx
+
+########################################
+# system paths
+
+# boost header
+BOOST_DIR        = /usr/include
+BOOST_LIB_PATH   = /usr/lib
+
+# Eigen header
+EIGEN_DIR        = /usr/include/eigen3
+
+# petsc configuration directory
+PETSC_DIR        = /usr/lib/petsc
+ifeq ($(DEBUG),YES)
+    PETSC_ARCH=linux-gnu-c-debug
+else
+    PETSC_ARCH=linux-gnu-c-opt
+endif
+PETSC_CONF_DIR   = conf
+
+# superlu header and library path and library name
+SUPERLU_INC      = /usr/include/superlu
+SUPERLU_LIB_PATH = /usr/lib
+SUPERLU_LIB      = -lsuperlu
+
+# selects the dgssvx() call signature in corlib/SystemSolveLU.hpp
+STATFEM_SUPERLU_VERSION  = 5
+OPENFTL_SUPERLU_VERSION  = 5
+
+# gsl header and library
+GSL_INC          = /usr/include
+GSL_LIB_PATH     = /usr/lib
+
+# LAPACK path
+LAPACK_LIB_PATH = /usr/lib
+LAPACK_LIB      = -llapack -lblas
+
+# METIS library path - tested with libparmetis-dev Ubuntu package
+METIS_INC      = /usr/include/metis
+METIS_LIB_PATH = /usr/lib
+METIS_LIB      = -lmetis
+
+# where BDDCML library is located 
+BDDCML_DIR = $(STATFEMROOT)/tools/bddcml
+
+# where Fortran compiler libs are when linking by C++ compiler
+FORTRAN_LIB_PATH = /usr/lib
+FORTRAN_LIB = -lgfortran
+
+# additional suffix to change name from Fortran source to symbol 
+# both GNU and Intel Fortran compilers add "_" to the name
+C2FDEF = -DAdd_
+
+OPENMPFLAG = -fopenmp
+
+########################################
+# flags and defines
+
+# compilation flags
+DEBCPPFLAGS = -g3 -Wall -Wextra -ansi -pedantic -Wno-unused-parameter -Wno-variadic-macros -Wconversion -std=c++17
+RELCPPFLAGS = -g -O3 
+
+# linking flags
+DEBLDFLAGS  = -g3
+RELLDFLAGS  = -g -O3
+
+# defines
+DEBDEFINES  = -DDEBUG
+RELDEFINES  = -DNDEBUG

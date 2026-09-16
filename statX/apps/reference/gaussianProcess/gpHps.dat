@@ -1,0 +1,9 @@
+gaussianProcess.sigma  1.
+gaussianProcess.length 0.3
+gaussianProcess.eps    1e-6
+gaussianProcess.w0     0.0
+gaussianProcess.w1     0.9510565162951535312
+gaussianProcess.w2     0.5877852522924732481
+gaussianProcess.w3     -0.5877852522924730261
+gaussianProcess.w4     -0.9510565162951536422
+gaussianProcess.w5     0.0

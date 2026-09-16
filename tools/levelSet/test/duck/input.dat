@@ -1,0 +1,11 @@
+bruteForce     0
+elementBBox    1
+inflation      1.5
+oneside        0
+rescale        1
+maxLevelSet    1.0
+verbose        0
+
+writeVTU       1
+uniqueVTU      0
+timing         0

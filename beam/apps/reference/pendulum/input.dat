@@ -1,0 +1,14 @@
+meshFile          line8.smf
+materialFile      material.dat
+constraintsFile   line8.cstr
+supportsFile      line8.supp
+loadsFile         line8.load
+
+beamArea          3.0e-5                   # m^2
+beamSecMomArea    2.25e-9                  # m^4
+
+newmarkBeta       0.25                     # (0,0.5]
+newmarkGamma      0.5                      # (0,1.0]
+
+timeStepSize      0.005;
+numTimeSteps      5

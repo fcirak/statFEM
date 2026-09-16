@@ -1,0 +1,6 @@
+# steps to generate these files:
+#   gmsh -2 flowAroundCircle.geo
+#   $STATFEMROOT/tools/input/gmsh/gmsh2smf -e 3 -f 2 -i flowAroundCircle.msh
+# and answer with '5' (extract edges) for the 'Flow' boundary
+meshFile          flowAroundCircle.smf
+boundaryFile      flowAroundCircle.Flow.edges

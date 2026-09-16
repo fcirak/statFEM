@@ -1,0 +1,9 @@
+meshFile          bar.smf
+
+# number of conductivity coefficient
+numConductivity   5
+
+allHyperFile      allHyperParam.dat
+infInputFile      inferenceInput.dat
+conductCoordFile  gpCoordinates.dat
+  

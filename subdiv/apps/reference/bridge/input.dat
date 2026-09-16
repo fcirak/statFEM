@@ -1,0 +1,6 @@
+#-- input output file names --
+inputMeshFileName        input/bridge.smf
+secondaryInputFileName   input/bridge.tg
+
+outputFolder             out
+outputBaseFileName       out/bridge

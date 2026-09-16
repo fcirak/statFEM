@@ -1,0 +1,2 @@
+numpy
+baryrat==1.4.0

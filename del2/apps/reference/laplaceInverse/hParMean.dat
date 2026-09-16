@@ -1,0 +1,7 @@
+# Output file containing the learned hyperparameters
+gaussianProcess.w0  0.77005
+gaussianProcess.w1  1.06049
+gaussianProcess.w2  0.847863
+gaussianProcess.w3  0.319244
+gaussianProcess.w4  0.705646
+mismatch.sensorEps  0.0107825

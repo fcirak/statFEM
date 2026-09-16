@@ -1,0 +1,23 @@
+inputMeshFileName        input/flatWing.smf
+#inputMeshFileName        input/plate.smf
+secondaryInputFileName   input/flatWing.tg
+#secondaryInputFileName   input/plate.tg
+
+outputFolder             out/
+outputBaseFileName       out/flatWing
+
+materialFileName         input/material.dat
+monitorInputFileName     input/monitorInput.dat
+
+animationFolder          animation/
+monitorOutputFileName    animation/flatWing.monitor
+animationBaseFileName    animation/flatWing
+
+thickness                1.e-2
+
+# control
+newmarkGamma             0.5
+newmarkBeta              0.25
+timeStepMax              4
+timeStepSize             0.0000666666666666667
+writeEveryStep           1

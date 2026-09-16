@@ -1,0 +1,5 @@
+meshFile          coarse.smf
+materialFile      material.dat
+constraintsFile   coarse.constraints
+numberOfSubSteps  200
+

@@ -1,0 +1,11 @@
+smf	  bridge.smf
+dim	  3
+minX	  -20.0
+minY	  -10.0
+minZ	  -15.0
+maxX	   20.0
+maxY	   10.0
+maxZ	    5.0
+numCellsX 40
+numCellsY 40
+numCellsZ 40

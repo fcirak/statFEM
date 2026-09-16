@@ -1,0 +1,36 @@
+# input file to be read into parameter map
+
+# forcing uncertainty
+forcing.sigma                 0.3
+forcing.length                0.25
+
+# model mismatch
+rho                           1.
+mismatch.sigma                0.01
+mismatch.length               0.1
+
+# sensor uncertainty
+mismatch.sensorEps            0.005
+
+# material conductivity
+conductivity                  1.0
+
+# mean of the prior distribution of hyperparameters
+priorMean.rho                 0.8
+priorMean.mismatch.sigma      0.01
+priorMean.mismatch.length     0.1
+
+# variance of the prior distribution of hyperparameters
+priorCov.rho                  0.05
+priorCov.mismatch.sigma       0.05
+priorCov.mismatch.length      0.1
+
+# initial sample for MCMC
+init.rho                      0.8
+init.mismatch.sigma           0.03
+init.mismatch.length          0.1
+
+# standard deviation for the proposal covariance
+propStDev.rho                 0.01
+propStDev.mismatch.sigma      0.01
+propStDev.mismatch.length     0.005

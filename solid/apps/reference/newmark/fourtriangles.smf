@@ -1,0 +1,13 @@
+! elementShape triangle
+! elementNumPoints 3
+6   4
+0 0 0
+1 0 0
+2 0 0
+0 1 0
+1 1 0
+2 1 0
+0 1 4
+4 3 0
+1 2 5
+1 5 4

@@ -1,0 +1,7 @@
+# input
+inputMeshFileName        input/meshTria.smf
+secondaryInputFileName   input/meshTria.tg
+
+# output
+outputFolder             out/
+outputMeshFileName       out/meshTria.smf

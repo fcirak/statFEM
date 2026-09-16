@@ -1,0 +1,11 @@
+SVenant {
+        youngModulus 1000.00
+        poissonRatio 0.3
+        massDensity  1.0
+}
+#
+#Neohookean {
+#	youngModulus 1000.00
+#	poissonRatio 0.3
+#	massDensity  1.0
+#}

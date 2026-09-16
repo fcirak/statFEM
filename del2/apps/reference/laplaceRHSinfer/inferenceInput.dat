@@ -1,0 +1,18 @@
+# sensor data
+numReadings       10
+phiMatFile        ./phiMat.dat
+sensorPosFile     ./sensorCoordinates.dat
+sensorValFile     ./sensorValues.dat
+
+## sample number
+numSamples        20000
+
+# 1 -> use user defined prior distribution instead of default
+# 0 -> use default prior (p \propto 1)
+enrichWithPrior   0
+
+## output file
+hpsMeanFile       ./inferredHyperParam.dat
+sampleMCMCFile    ./logMLsamples.dat
+feCondDataFile    ./inferredFEcondData.dat
+meanCovarRHSFile  ./meanCovarRHS.dat

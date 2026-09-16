@@ -1,0 +1,15 @@
+#-- input output file names --
+inputMeshFileName        input/meshCC.smf
+secondaryInputFileName   input/meshCC.tg
+
+outputFolder             out/
+outputBaseFileName       out/meshCC
+
+thicknessSF              1.e-1
+thicknessKL              1.e-5
+materialFileName         input/material.dat
+monitorInputFileName     input/monitorInput.dat
+
+animationFolder          animation/
+monitorOutputFileName    animation/monitorOutput.dat
+animationBaseFileName    animation/meshCC
