@@ -1,12 +1,8 @@
 # statFEM
 
-C++ implementation of the **statistical finite element method (statFEM)** and the finite element
-infrastructure it is built on, developed by the Computational Structural Mechanics Lab at the
-University of Cambridge. This is the reference codebase behind the statFEM papers below.
+statFEM is CSMLab’s in-house finite element library, developed over several years by many brilliant [PhD students and postdocs](https://www.csmlab.org/people/) to support research in computational mechanics. The C++ library provides the computational framework underlying a range of our work on finite element methods, solid and structural mechanics, subdivision and isogeometric methods, optimisation, and probabilistic computational mechanics.
 
-statFEM is a Bayesian framework that synthesises noisy sensor/observation data with a finite
-element model's predictions in a statistically coherent way, so that model error can be
-quantified and compensated for rather than ignored.
+We are releasing the library publicly to make this research software available to the wider computational mechanics community.
 
 ## Getting started
 
@@ -23,9 +19,6 @@ This code has been used to produce results for:
 - Koh, K. J., Cirak, F. (2023). [Stochastic PDE representation of random fields for large-scale Gaussian process regression and statistical finite element analysis](https://www.sciencedirect.com/science/article/abs/pii/S0045782523004826). *Computer Methods in Applied Mechanics and Engineering*, 417 Part B, 116353. Poisson and thin-shell examples in this paper correspond to the `del2` and `gshell` modules respectively.
 
 If you use this code, please cite the 2021 paper above.
-
-A separate, Python/Firedrake-based implementation of statFEM is maintained by the Alan Turing
-Institute at [alan-turing-institute/stat-fem](https://github.com/alan-turing-institute/stat-fem).
 
 ## Repository structure
 
@@ -73,25 +66,6 @@ Each physics module follows the same pattern:
    `config/statFEM_definitions.default` if no host-specific file exists. If the defaults don't
    match your system, copy `config/statFEM_definitions.default` to
    `config/statFEM_definitions.<your-hostname>` and adjust the paths.
-
-### Python environment for statX (baryrat)
-
-`statX/inferQ/PrecisionMatrixRational` (used by `del2/apps/user/gaussianProcessQ` and any other
-app relying on the rational SPDE precision-matrix approximation) does not link against Python —
-it shells out at runtime to the **hardcoded path** `$STATFEMROOT/.venv/bin/python3` to run
-`tools/baryrat/baryrat-1.4.0/roots.py`. This means the Poetry virtualenv must end up at
-`$STATFEMROOT/.venv` specifically, which is **not** Poetry's default behaviour — by default
-`poetry install` places the venv in a central cache directory, not the project folder.
-
-Before running `poetry install` from the repo root, either:
-
-```sh
-poetry config virtualenvs.in-project true   # global Poetry setting, or
-```
-or set it per-project with a `poetry.toml`, or manually create `$STATFEMROOT/.venv` first
-(e.g. `python3 -m venv .venv`) so Poetry reuses it. Without this, apps that depend on
-`PrecisionMatrixRational` will fail at runtime with an opaque `std::system()` error rather than
-a build error, since nothing checks for `.venv` at compile time.
 
 ### Building and running an application
 
