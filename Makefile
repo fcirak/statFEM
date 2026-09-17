@@ -1,4 +1,4 @@
-SUBDIRS := del2/apps/user/inference1D
+SUBDIRS := del2/apps/reference/laplace
 
 .PHONY: all $(SUBDIRS)
 
