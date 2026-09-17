@@ -2,6 +2,8 @@
 
 statFEM provides an implementation of the statistical finite element method. It is based on [CSMLab](https://www.csmlab.org/)’s in-house finite element library, developed over several years by many brilliant [PhD students and postdocs](https://www.csmlab.org/people.html). The original C++ library forms the computational framework underlying a range of our work on finite element methods, solid and structural mechanics, subdivision and isogeometric methods, optimisation, and probabilistic computational mechanics.
 
+![Digital Twin](https://raw.githubusercontent.com/wiki/fcirak/statFEM/images/intro_snapshot.png)
+
 ## Relevant publications
 
 - Girolami, M., Febrianto, E., Yin, G., Cirak, F. (2021). [The statistical finite element method (statFEM) for coherent synthesis of observation data and model predictions](https://doi.org/10.1016/j.cma.2020.113533). *Computer Methods in Applied Mechanics and Engineering*, 375, 113533.
